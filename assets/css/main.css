@@ -1,0 +1,541 @@
+* {
+	outline: none;
+}
+
+body {
+	background: #EEE;
+	font-family: Tahoma;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #333;
+}
+
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.2em; font-family: Arial; font-weight: bold;
+text-transform: uppercase; line-height: 1.7em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; }
+
+a {
+	color: #555;
+	font-weight: bold;
+}
+
+#topbar {
+	width: 100%;
+	padding: 15px 0;
+	height: 40px;
+	background: #DDD url(../imgs/gradient_sprite.jpg) repeat-x;
+	overflow: hidden;
+}
+
+#topbar h1 a {
+	display: block;
+	width: 182px;
+	height: 45px;
+	text-indent: -20000px;
+	background: url(../imgs/sprite.jpg) no-repeat;
+}
+
+#topbar a.button {
+	display: block;
+	width: 100%;
+	background: #CCC url(../imgs/gradient_sprite.jpg) 0 -375px repeat-x;
+	height: 12px;
+	padding: 16px 0;
+	font-size: 1em;
+	line-height: .9em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: 0 -1px rgba(0,0,0,.5);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: 0 1px #FFF;
+	-webkit-box-shadow: 0 1px #FFF;
+	-moz-box-shadow: 0 1px #FFF;
+	-o-box-shadow: 0 1px #FFF;
+}
+
+#topbar a.button:hover {
+	
+}
+
+#scroller {
+	width: 100%;
+	height: 240px;
+	padding: 30px 0;
+	background: #2b3c44 url(../imgs/gradient_sprite.jpg) 0 -75px repeat-x;
+}
+
+#scroller img.scrollerImage {
+	width: 290px;
+	border: 5px solid #7c919c;
+}
+
+#primary {
+	width: 100%;
+	background: url(../imgs/gradient_sprite.jpg) 0 -465px repeat-x;
+	padding: 30px 0;
+}
+
+#primary h3.special {
+	text-align: center;
+	font-size: 2.5em;
+	line-height: 1em;
+	display: block;
+	color: #333;
+	text-shadow: 0 1px #FFF;
+}
+
+#primary hr.special {
+	height: 10px;
+	width: 610px;
+	border: 0;
+	background: url(../imgs/hr.jpg) no-repeat;
+	margin: 10px auto 20px;
+}
+
+#primary div.push15 {
+	margin-bottom: 15px;
+}
+
+#primary a.button {
+	display: block;
+	width: 100%;
+	background: #CCC url(../imgs/gradient_sprite.jpg) 0 -420px repeat-x;
+	height: 12px;
+	padding: 16px 0;
+	font-size: 1em;
+	line-height: .9em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #777;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: 0 1px #FFF;
+	-webkit-box-shadow: 0 1px #FFF;
+	-moz-box-shadow: 0 1px #FFF;
+	-o-box-shadow: 0 1px #FFF;
+	border: 1px solid #BBB;
+}
+
+#footer {
+	color: #CCC;
+	width: 100%;
+	background: #121212 url(../imgs/footer_bg.jpg) center no-repeat;
+	padding: 15px 0;
+	margin: 0 0 15px 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #CCC;
+}
+
+#footer .grid_4 {
+	text-align: right;
+	line-height: 1.2em;
+}
+
+#postFooter {
+	margin-bottom: 15px;
+	font-size: .8em;
+}
+
+#postFooter .grid_4 {
+	text-align: right;
+}
+
+#overlay, #overlay div.content {
+	display: none;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.85);
+	width: 100%;
+	height: 100%;
+}
+
+#overlay div.content {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	background: #FFF;
+	width: auto;
+	max-width: 900px;
+}
+#overlay div.content:first-child {
+	position: relative;
+}
+
+/*----------------------------------------------------------------
+					Reservation Form
+----------------------------------------------------------------*/
+
+.phonenumberfloat {
+	display: block;
+	float: right;
+}
+
+#reservationForm {
+	font-size: 1em;
+}
+
+#reservationForm div.left {
+	width: 430px;
+	margin-right: 20px;
+	float: left;
+}
+
+#reservationForm div.right {
+	float: left;
+	width: 430px;
+}
+
+#reservationForm input, #reservationForm textarea, #reservationForm select {
+	font-size: 1em;
+	padding: 7px;
+	background: #EEE;
+	color: #666;
+	border: 1px solid #DDD;
+}
+
+#reservationForm input:hover, #reservationForm textarea:hover, #reservationForm select:hover {
+	background: #DDD;
+	color: #555;
+	border: 1px solid #CCC;
+}
+
+#reservationForm input:focus, #reservationForm textarea:focus, #reservationForm select:focus {
+	background: #e6fce6;
+	color: #555;
+	border: 1px solid #DDD;
+}
+
+#firstname, #lastname, #company, #email, #phone, #roomoption {
+	display: block;
+	float: left;
+	width: 414px;
+	margin-bottom: 8px;
+}
+
+#firstname, #company, #phone {
+	margin-right: 20px;
+}
+
+input#month, input#day, input#year {
+	margin-left: 10px;
+}
+
+input#month {
+	width: 30px;
+	text-align: center;
+}
+
+input#day {
+	width: 30px;
+	text-align: center;
+}
+
+/* label.checkbox {
+	display: block;
+	float: left;
+	width: 25%;
+} */
+
+#description {
+	width: 414px;
+	height: 100px;
+}
+
+div.container_12.co h1{
+	padding: 20px 0px 30px 0px;
+	font-size: 30px;
+	
+}
+div.container_12.co p{
+	width: 440px;
+	float: left;
+	margin-bottom: 30px;
+}
+#pictures_side{
+	width: 400px;
+	float: right;
+}
+#pictures_side img{
+	width: 400px;
+}
+
+.grid_8 ul li{
+}
+#footer .grid_4 {
+
+}
+h1#title.cow{
+background: url('../../images/co-working-header.png') no-repeat;
+height: 41px;
+text-align: center;
+margin: 0 auto;
+width: 400px;
+}
+h1#title.sp{
+background: url('../../images/special-events-header.png') no-repeat;
+height: 41px;
+text-align: center;
+margin: 0 auto;
+width: 400px;
+}
+h1#title.meetings{
+background: url('../../images/meetings-header.png') no-repeat;
+height: 41px;
+text-align: center;
+margin: 0 auto;
+width: 265px;
+}
+h1#title.contact{
+background: url('../../images/contact-us.png') no-repeat;
+height: 60px;
+text-align: center;
+margin: -25px auto 0px auto;
+width: 370px;
+padding: 1px 0px 40px;
+background-position-y: -21px;
+}
+div.social_media {
+top: 20px !important;
+}
+div#content_side{width: 440px;
+float: left;
+}
+div#content_side ul{
+	float: left;
+	margin-left: 17px;
+
+}
+div#content_side li{
+	list-style: circle;
+}
+a.contact_button{
+width: 400px;
+height: 40px;
+background-color: #936FB9;
+display: block;
+line-height: 40px;
+padding: 5px;
+text-align: center;
+text-decoration: none;
+font-family: verdana;
+border-radius: 3px;
+color: white;
+}
+a.contact_button:hover{
+	opacity: .35;
+}
+p.phone_number{
+	font-size: 24px;
+}
+div#camera_wrap.camera_wrap{
+	background: #1B1A1A;
+}
+div#topbar div.social_media{
+	right: 50px;
+}
+div#scroller{
+	background: #1B1A1A;
+}
+div#upper_crust{
+width: 150px;
+height: 150px;
+background: url('../../images/Upper_Crust_Logo_new.png') no-repeat;
+display: block;
+float: right;
+margin-top: -41px;
+background-size: 150px;
+}
+div.staff_picture{
+float: left;
+width: 174px;
+display: block;
+}
+div.staff_picture img{
+	width: 110px;
+	margin: 0px auto;
+display: block;
+		
+}
+div.staff_picture p{
+	text-align: center;
+	font-size: 11px;
+		
+}
+div#content_side.contact_us{
+	width: 525px;
+}
+div.blurb{
+float: left;
+width: 329px;
+margin: 0px 0px 60px 20px;
+}
+div#content_side.contact_us p{
+	width: 100%;
+	clear: both;
+}
+div#topbar div.navbar ul a:hover{
+		color: #936FB9;
+		
+}
+	#scroller{
+		width: 100%;
+		padding: 0px;
+		
+	}
+	#camera_wrap{
+		position: relative;
+		display: block;
+		height: 270px;
+		width: 100%;
+	}
+	#topbar {
+		position: relative;
+		display: block;
+		background: #2b2b2b;
+	}
+	#footer{
+		background: #2b2b2b;
+	}
+	#topbar h1 a {
+		width: 217px;
+		background: url('../../images/museaoLogocolour_horizontal.png') no-repeat;
+	}
+	div.navbar{
+		right: 200px;
+		top: 26px;
+		position: absolute;
+		float: right;
+		
+	}
+	div.navbar ul{
+		width: 200px;
+		height: 40px;
+		display: inline;
+	}
+	div.navbar ul li{
+		width: 30px;
+		display: inline;
+		padding: 0px 5px;
+		
+	}
+	div.navbar ul a{
+		color: white;
+		text-decoration: none;
+		
+		-webkit-transition: all .2s ease;
+   		-moz-transition: all .2s ease;
+   		-o-transition: all .2s ease;
+	}
+	
+	div.navbar ul a:hover{
+		color: #B63737;
+		
+	}
+	div.social_media{
+		right: 5px;
+		top: 35px;
+		position: absolute;
+		float: right;
+		
+	}
+	div.social_media ul{
+		width: 200px;
+		height: 40px;
+		display: inline;
+	}
+	div.social_media ul li{
+		width: 30px;
+		display: inline;
+	}
+	div.social_media ul a img{
+		width: 30px;
+		height: 30px;
+		-webkit-transition: all .2s ease;
+   		-moz-transition: all .2s ease;
+   		-o-transition: all .2s ease;
+	}
+	div.social_media ul a img:hover{
+		opacity: .35;
+		
+	}
+	.smicon{
+		background-size: 30px;
+	}
+	
+
+	
+	/*Where Beauty section */
+	div.grid_12{
+		height: 240px;
+		margin: -40px 0px 20px 0px;
+		width: 960px;
+	}
+	hr.style-two {
+		border: 0;
+		height: 1px;
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	}
+	div.headerupper{
+		background: url('../../images/headerupper.png') no-repeat;
+		width: 940px;
+		height: 130px;
+		background-position: 11px 0px;
+	}
+	div.headerlower{
+		background: url('../../images/headerlower_2.png') no-repeat;
+		width: 940px;
+		height: 95px;
+		background-position: 166px 0px;
+		background-size: 620px;
+		margin: 10px 0px;
+	}
+	 div#seperator{
+		height: 3px;
+		width: 100%;
+		background: black;
+	}
+	div.grid_4.push15 h2,div.grid_4.push15 p{
+		text-align: center;
+	}
+	div.grid_4.push15 img{
+		width: 48px;
+		height: 48px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		-webkit-transition: all .2s ease;
+   		-moz-transition: all .2s ease;
+   		-o-transition: all .2s ease;
+	}
+	div.grid_4.push15:hover img{
+		transform: translate(0,-15px);
+    	-webkit-transform: translate(0,-15px);
+    	-o-transform: translate(0,-15px);
+    	-moz-transform: translate(0,-15px);	
+	}
