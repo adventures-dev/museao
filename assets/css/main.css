@@ -539,3 +539,64 @@ div#topbar div.navbar ul a:hover{
     	-o-transform: translate(0,-15px);
     	-moz-transform: translate(0,-15px);	
 	}
+	
+/* CONTACT FORM */
+
+#contact_form{
+	width: 100%;
+}
+
+#contact_form .field{
+	width: 100%;
+	float: left;
+	font-family: Tahoma;
+	
+}
+#contact_form .field label{
+	display: block;
+	font-family: Tahoma;
+	font-size: large;
+	padding: 10px 0px 5px;
+	
+}
+#contact_form .field .input{
+	width: 100%;
+	resize: none;
+	height: 25px;
+	line-height: 20px;
+	font-size: small;
+	font-family: Tahoma;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid #ececec;
+	
+}
+#contact_form .field textarea.input{
+	height: 100px;
+}
+#contact_form .field select{
+	font-family: Tahoma;
+		font-size: medium;
+
+}
+#contact_form .contact_button{
+	margin-top: 10px;
+	height: 40px;
+	width: 100px;
+	background-color: #936FB9;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-family: Tahoma;
+	border-radius: 3px;
+	color: white;
+	border: none;
+	font-size: medium;
+}
+#contact_form #error{
+	font-size: small;
+	font-style: italic;
+	font-family: Tahoma;
+		
+}

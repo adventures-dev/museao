@@ -109,6 +109,7 @@
 		
 			<h1 style="font-family: 'Raleway Dots', cursive;" id="title" class="contact"></h1>
 			<div id="content_side" class="contact_us">
+			
 				<div class="staff_picture">
 					<img src="images/contact-us-museao.jpg">
 				</div>
@@ -149,7 +150,40 @@
 				</div>
 		
 			<div id="pictures_side">
+			
+				<form id="contact_form" action="" method="POST">
+					<div class="field">
+						<label>Name:</label>
+						<input id="name" name="name" type="text" class="input" placeholder="John Smith">
+					</div>
+					<div class="field">
+						<label>Email:</label>
+						<input id="name" name="name" type="email" class="input" placeholder="sample@email.com">
+					</div>
+					
+					<div class="field">
+						<label>Interested In:</label>
+						<select id="interest" name="interest">
+							<option selected="selected">Conference Room/Meeting</option>
+							<option>Special Event</option>
+							<option>Other</option>
+						</select>
+					</div>
+					<div class="field">
+						<label>Message:</label>
+						<textarea id="message" name="message" class="input" placeholder="How can we help you?"></textarea>
+					</div>
+					<div class="field">
+						<button class="contact_button">Contact</button>
+					</div>
+					<div id="error"></div>
+				</form>
+			
+			
+			<!--
 				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Museao,+3500+Buttonwood+Drive,+Columbia,+MO&amp;aq=0&amp;oq=Museao+3500+Buttonwood+Driv&amp;sll=38.914478,-92.331076&amp;sspn=0.042608,0.090895&amp;ie=UTF8&amp;hq=Museao,&amp;hnear=3500+Buttonwood+Dr,+Columbia,+Missouri+65201&amp;t=m&amp;ll=38.913421,-92.33089&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Museao,+3500+Buttonwood+Drive,+Columbia,+MO&amp;aq=0&amp;oq=Museao+3500+Buttonwood+Driv&amp;sll=38.914478,-92.331076&amp;sspn=0.042608,0.090895&amp;ie=UTF8&amp;hq=Museao,&amp;hnear=3500+Buttonwood+Dr,+Columbia,+Missouri+65201&amp;t=m&amp;ll=38.913421,-92.33089&amp;spn=0.006295,0.006295" style="color:#555555;text-align:left">View Larger Map</a></small>
+				
+				-->
 			</div>
 	</div><!-- end of container_12 -->
 	
@@ -201,6 +235,75 @@
 			<div class="content"></div>
 		
 		</div><!-- end of overlay -->
+
+
+
+<script>
+
+$.validator.addMethod(
+	"names",
+	function(value,element){
+	var hNum=/[^A-Za-z]/;
+	var inp=jQuery.trim(element.value).toLowerCase();
+	if(hNum.test(inp)) {    return false;
+	}
+	else return true;
+	},
+	"Please enter a vaild input."
+);
+
+$("#settings-form").validate({
+    rules: {
+        name: {
+            required: false,
+            names: true,
+        },
+        email: {
+            required: false,
+            email: true,
+        }
+
+    },
+    submitHandler: function (form) {
+
+        $("#error").empty();
+        
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var interest = $('#interest').val();
+        var message = $('#message').val();
+
+
+
+        var data = {
+            name: name,
+            email: email,
+            interest: interest,
+            message: message
+
+        };
+         ///ajax here::::
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: data,
+            success: function (res) {
+                if (res == true) {
+       
+                     $("#error").append('Thanks! We will get back to you shortly.');
+
+
+                } else {
+                	
+                    $("#error").append(res);
+                }
+
+            }
+        });
+    }
+});
+
+</script>
 
 </body>
 </html>
