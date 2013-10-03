@@ -550,6 +550,7 @@ div#topbar div.navbar ul a:hover{
 	width: 100%;
 	float: left;
 	font-family: Tahoma;
+
 	
 }
 #contact_form .field label{
@@ -557,7 +558,12 @@ div#topbar div.navbar ul a:hover{
 	font-family: Tahoma;
 	font-size: large;
 	padding: 10px 0px 5px;
+	font-style: normal;
 	
+}
+#contact_form .field label.error{
+	font-size: small;
+	font-style: italic;
 }
 #contact_form .field .input{
 	width: 100%;
@@ -594,9 +600,15 @@ div#topbar div.navbar ul a:hover{
 	border: none;
 	font-size: medium;
 }
+#contact_form .contact_button:hover{
+	cursor: hand;
+	cursor: pointer;
+	background-color: #68468c;
+}
 #contact_form #error{
 	font-size: small;
 	font-style: italic;
-	font-family: Tahoma;
+	font-family: Tahoma; 
+	padding: 10px 0px;
 		
 }
