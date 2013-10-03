@@ -6,7 +6,7 @@ $email = $_POST["email"];
 $interst = $_POST["interest"];
 $message = $_POST["message"];
 
-$to = "dave@adventur.es";
+$to = "lindsey@museao.com";
 $subject = "New Contact from Museao.com";
 $message = 'Name: '.$name.' <br>
 		    Email: '.$email.' <br>
