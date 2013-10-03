@@ -6,17 +6,16 @@ $email = $_POST["email"];
 $interst = $_POST["interest"];
 $message = $_POST["message"];
 
-
-$to = "lindsey@museao.com";
+$to = "dave@adventur.es";
 $subject = "New Contact from Museao.com";
-$message = 'Name: '.$name.' \n
-		    Email: '.$email.' \n
-		    Interest: '.$interst.' \n
-		    Message: '.$message.' \n';
+$message = 'Name: '.$name.' <br>
+		    Email: '.$email.' <br>
+		    Interest: '.$interst.' <br>
+		    Message: '.$message.' <br>';
 		    
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From: DoNotReply <contact@museao.com>' . "\r\n";
+$headers .= 'From: Contact Museao <contact@museao.com>' . "\r\n";
 
 
 mail($to, $subject, $message, $headers);
