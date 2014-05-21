@@ -24,16 +24,16 @@
 			
 			<div id="navbar">
 				<div id="logo">
-					<a href="../"><img src="../assets/img/logo.png"></a>
+					<a href=""><img src="assets/img/logo.png"></a>
 				</div>
 				<div id="nav_buttons">
-					<a href="../about-venue" id="about_button">
+					<a href="about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="../preferred-vendors" id="vendor_button">
+					<a href="preferred-vendors" id="vendor_button">
 						Preferred Vendors
 					</a>
-					<a href="../contact" id="contact_button">
+					<a href="contact" id="contact_button">
 						Contact
 					</a>
 				</div>
