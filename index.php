@@ -27,13 +27,13 @@
 					<a href="../"><img src="../assets/img/logo.png"></a>
 				</div>
 				<div id="nav_buttons">
-					<a href="#" id="about_button">
+					<a href="../about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="#" id="vendor_button">
+					<a href="../preferred-vendors" id="vendor_button">
 						Preferred Vendors
 					</a>
-					<a href="#" id="contact_button">
+					<a href="../contact" id="contact_button">
 						Contact
 					</a>
 				</div>
@@ -42,7 +42,7 @@
 			<div id="mid_section">
 				<h1>Where <span>Beauty</span> Meets Functionality</h1>
 				<h2>Modern Event Venue</h2>
-				<a id="call_to_action" href="#">Contact us</a>
+				<a id="call_to_action" href="../contact">Contact us</a>
 			</div>
 			
 			<div id="landing_footer">
