@@ -474,6 +474,12 @@ form button:action, form button:focus{
 	outline: none;
 	box-shadow: none;
 }
+
+#contact_form{
+	padding: 10px;
+	background: rgba(255,255,255,0.95);
+	border-radius: 5px;
+}
 /*********** RESPONSIVE **********/
 
 
