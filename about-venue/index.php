@@ -22,15 +22,51 @@
 			<div class="mid_section">
 				<div class="container">
 					<div class="row-fluid">
-						<div class="span8">
+						<div class="span6">
 							<h1>About Venue</h1>
 							<p>Museao is the premier special event venue located in the heart of Columbia, MO. Our modern flair and especially unique design sets us apart as an unforgettable destination, sure to awe your guests from the moment they arrive until the get-away car is whisking you away at the end of the evening. Museao provides various spaces able to accommodate all event styles from wedding ceremonies, cocktail hours, receptions, and many other special events. Let us fuel your imagination and bring your vision to life as we fulfill your venue needs!</p>
 				
 							<p>During the weekdays, Museao serves the dual function of operating as a creative co-working space for startup companies. In 2012, it was decided to open up Museao for hosting outside special events and ever since it has been a wonderful experience sharing our beautiful venue with clients around the area.</p>
-							<div class="buttons"><a href="#">Catering Menu</a> <a href="#">Museao Square Footages</a>
+							<div class="buttons"><a href="../Catering-Menu.pdf" target="_blank">Catering Menu</a> <a href="../Museao-Square-Footages.pdf" target="_blank">Museao Square Footages</a>
 							</div>
 
 						</div>
+						<div class="span6">
+							<div class="article">
+								<div class="row-fluid">
+									<div class="span6">
+										<div class="image_wrapper">
+											<div class="image">
+												<img src="../assets/img/Inside Columbia's Weddings Cover.png">
+											</div>
+										</div>
+									</div>
+									<div class="span6">
+										<h4>Inside Columbia's Weddings Magazine</h4>
+										<p>Article on pg. 20</p>
+										<a href="http://issuu.com/insidecolumbia/docs/icweddings-2014-digital" target="_blank">View article</a>
+									</div>
+								</div>
+							</div>
+							<div class="article">
+								<div class="row-fluid">
+									<div class="span6">
+										<div class="image_wrapper">
+											<div class="image">
+												<img src="../assets/img/Inside Columbia Cover.png">
+											</div>
+										</div>
+									</div>
+									<div class="span6">
+										<h4>Inside Columbia Magazine</h4>
+										<p>Article on pgs. 148-151</p>
+										<a href="http://issuu.com/insidecolumbia/docs/insidecolumbiadec2013" target="_blank">View article</a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>

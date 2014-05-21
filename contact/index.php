@@ -24,39 +24,63 @@
 				<div class="container">
 					<div class="row-fluid">
 						<div class="span6 offset3">
-							<div id="form_wrapper" class="contact_us">
-								<h1>Contact us</h1>
+						
 								<form id="contact_form" action="" method="POST">
-									<p id="contact-leading">Email us about your event and to schedule a tour.</p>
+									<h1>Contact us</h1>
+									<p>Let us know your event details for free quote & venue tour.</p>
 				
-									<div class="field">
-										<label>Name:</label>
-										<input id="name" name="name" type="text" class="input-block-level" placeholder="Katie Smith">
+									<label>Name:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>
+										<input class="input-block-level" id="contact_name" type="text" name="name" placeholder="John Smith">
+									</div>								
+									<label>Email Address:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="contact_email" type="text" name="email" placeholder="sample@email.com">	
 									</div>
-									<div class="field">
-										<label>Email:</label>
-										<input id="email" name="email" type="email" class="input-block-level" placeholder="sample@email.com">
+									<label>Phone Number:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="contact_phone" type="text" name="phone" placeholder="(555)555-5555">	
+									</div>
+									<label>Event Type:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="contact_event_type" type="text" name="event_type" placeholder="Type of event">	
+									</div>
+									<label>Guest Count:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="contact_guest_count" type="text" name="guest_count" placeholder="Number of guests">	
 									</div>
 									
-									<div class="field">
-										<label>Interested In:</label>
-										<select id="interest" name="interest">
-											<option selected="selected">Special Event</option>
-				 							<option >Conference Room/Meeting</option>
-											<option>Other</option>
-										</select>
+									<label>Event Date:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="contact_date" type="date" name="date">	
 									</div>
-									<div class="field">
-										<label>Message:</label>
-										<textarea id="message" name="message" class="input-block-level" placeholder="Tell us about your event (e.g., date, times, guest count)."></textarea>
+									<label>Times:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<input class="input-block-level" id="contact_time" type="text" name="time" placeholder="Time of event">	
 									</div>
-									<div class="field">
-										<button class="contact_button">Contact</button>
+									<label>Catered? (+details):</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<textarea id="contact_catered" name="catered" class="input-block-level" placeholder=""></textarea>	
 									</div>
-									<div id="error"></div>
+									
+									
+									<label>Notes:</label>
+									<div class="right-inner-addon">
+										<span class="validation"></span>	
+										<textarea id="contact_notes" name="notes" class="input-block-level" placeholder="Tell us about your event (e.g., date, times, guest count)."></textarea>	
+									</div>
+						
+									<button>Contact</button>
+									<div class="error" id="contact_error"></div>								
 								</form>
-				
-							</div>
 						</div>
 					</div>
 				</div>
@@ -102,6 +126,94 @@
 					$("#contact_button").html('Contact');
 				}
 			}
+
+$("#contact_form").validate({
+
+    rules: {
+        name: {
+            required: true,
+
+		},
+        email: {
+            required: true,
+            email: true,
+        },
+        event_type: {
+            required: true,
+
+        },
+        guest_count: {
+            required: true,
+
+        },
+        catered: {
+            required: true,
+
+        },
+    },
+	success: function(label, element){
+		$(element).removeClass("form_error").siblings(".validation").show().removeClass("error").html("<i class='fa fa-check'></i>");
+		
+	},    
+	highlight: function(element, errorClass) {
+	    $(element).addClass("form_error");	
+		$(element).siblings(".validation").show().addClass("error").html("<i class='fa fa-exclamation-triangle'></i>");
+	},
+    submitHandler: function (form) {
+        $("#contact_error").show().html('<i class="fa fa-spinner fa-spin"></i>');
+        
+        var contact_name = $('#contact_name').val();
+        var contact_email = $('#contact_email').val();
+        var contact_phone = $('#contact_phone').val();
+        var contact_event_type = $('#contact_event_type').val();
+        var contact_guest_count = $('#contact_guest_count').val();
+        var contact_time = $('#contact_time').val();
+        var contact_date = $('#contact_date').val();
+        var contact_catered = $('#contact_catered').val();
+        var contact_notes = $('#contact_notes').val();
+
+
+        var data = {
+            name: contact_name,
+            email: contact_email,
+            phone: contact_phone,
+            event_type: contact_event_type,
+            guest_count: contact_guest_count,
+            time: contact_time,
+            date: contact_date,
+            catered: contact_catered,
+            notes: contact_notes,
+            
+            
+        }; 
+
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: data,
+            success: function (res) {
+            
+				$("#contact_error").html("");
+				            	
+            	 if (res == true) {
+            	 		$("#register_form input").each(function(){
+	            	 		$(this).val("");
+            	 		});
+				 		$(".validation").each(function(){
+	            	 		$(this).hide();
+            	 		});            	 		
+            	 		
+				 		window.location = "../thank-you";
+                   		
+                 }else{
+                     $("#contact_error").html(res).hide().fadeIn().delay(2000).fadeOut();
+                 }
+            }
+        });
+    }
+});
+	
+
 
 </script>
 
