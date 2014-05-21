@@ -27,13 +27,13 @@
 					<a href="../"><img src="../assets/img/logo.png"></a>
 				</div>
 				<div id="nav_buttons">
-					<a href="#">
+					<a href="#" id="about_button">
 						About Venue
 					</a>
-					<a href="#">
+					<a href="#" id="vendor_button">
 						Preferred Vendors
 					</a>
-					<a href="#">
+					<a href="#" id="contact_button">
 						Contact
 					</a>
 				</div>
@@ -69,7 +69,27 @@
 
         <!-- custom scripts -->            
         <script type="text/javascript">
-        	
+        	$(document).ready(function(){
+				responsive();
+			});
+			
+			$(window).resize(function(){
+				responsive();
+			})
+			
+			function responsive(){
+				var w = $(window).width();
+				if(w <= 767){
+					$("#about_button").html("About");
+					$("#vendor_button").html("Vendors");
+					$("#contact_button").html("<i class='fa fa-envelope'></i>");
+					
+				}else{
+					$("#about_button").html("About Venue");
+					$("#vendor_button").html("Preferred Vendors");
+					$("#contact_button").html('Contact');
+				}
+			}
         
         </script><!-- end of custom scripts -->
                 

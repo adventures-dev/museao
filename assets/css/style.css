@@ -207,6 +207,10 @@ padding: 15px 0px 30px;
 	transition: background .25s ease-in, color .25s ease-in;
 
 }
+
+
+
+
 /*********** RESPONSIVE **********/
 
 
@@ -220,8 +224,46 @@ padding: 15px 0px 30px;
 }
 
 @media (max-width: 767px) {
+	#logo{
+		height: 20px;
+		margin-top: 9px;
+		margin-left: 10px;
 	
+	}
+	#logo img{
+		height: 20px;
+	}
+	#nav_buttons a{
+	
+		padding: 5px 15px;
+		font-size: 9pt;
+		
+	}
+	#text_section{
+		display: none;
+	}
+	#social_section{
+		float:  none;
+		width: 196px;;
+		margin: 0px auto;
+		text-align: center;
+	}
+	#mid_section{
+		top: 20%;
+	}
+	#mid_section h1{
+		font-size: 20pt;
+		line-height: 45px;
 
+	}
+	#mid_section h2{
+		font-size: 14pt;
+		padding: 0px 0px 20px;
+	}
+	#mid_section a#call_to_action{
+		font-size: 12pt;
+		padding: 10px 20px;
+	}
 }
 
 @media (max-width: 568px) {
