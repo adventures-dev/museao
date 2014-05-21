@@ -13,7 +13,7 @@ $notes = $_POST["notes"];
 
 
 if($name && $email){
-$to = "daveosterjr@gmail.com";
+$to = "museaoevents@gmail.com";
 	
 
 $subject = $name." has contacted Museao Events!";
