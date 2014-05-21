@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Museao | Event Hosting | Columbia, MO</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />        
+		<meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="With 30 ft. ceilings and 10,000 sq. ft. of glass, steel, and concrete, let this award winning building be the venue for your next event." />
 		<meta name="robots" content="noodp, noydir" />
         <link rel="icon" href="favicon.ico" type="image/x-icon">
