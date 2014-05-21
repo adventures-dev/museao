@@ -59,7 +59,7 @@
 			<div id="mid_section">
 				<h1>Where <span>Beauty</span> Meets Functionality</h1>
 				<h2>Modern Event Venue</h2>
-				<a id="call_to_action" href="../contact">Contact us</a>
+				<a id="call_to_action" href="contact">Contact us</a>
 			</div>
 			
 			<div id="landing_footer">
