@@ -50,6 +50,9 @@
 					<a href="preferred-vendors" id="vendor_button">
 						Preferred Vendors
 					</a>
+					<a href="gallery" id="gallery_button">
+						Gallery
+					</a>
 					<a href="contact" id="contact_button">
 						Contact
 					</a>
@@ -93,17 +96,19 @@
 			$(window).resize(function(){
 				responsive();
 			})
-			
+		
 			function responsive(){
 				var w = $(window).width();
 				if(w <= 767){
 					$("#about_button").html("About");
 					$("#vendor_button").html("Vendors");
+					$("#gallery_button").html("<i class='fa fa-picture-o'></i>");
 					$("#contact_button").html("<i class='fa fa-envelope'></i>");
 					
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
+					$("#gallery_button").html('Galley');
 					$("#contact_button").html('Contact');
 				}
 			}

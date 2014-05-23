@@ -9,11 +9,14 @@
 					<a href="../"><img src="../assets/img/logo.png"></a>
 				</div>
 				<div id="nav_buttons">
-					<a href="../about-venue" id="about_button">
+					<a href="../about-venue" id="about_button" class="active">
 						About Venue
 					</a>
 					<a href="../preferred-vendors" id="vendor_button">
 						Preferred Vendors
+					</a>
+					<a href="../gallery" id="gallery_button">
+						Gallery
 					</a>
 					<a href="../contact" id="contact_button">
 						Contact
@@ -25,8 +28,8 @@
 					<div class="row-fluid">
 						<div class="span6 offset3">
 						
-									<h1>Thank you for contacting us!</h1>
-									<p>Thank you for your message.  We will get back to you soon!</p>
+									<h1>Thank you for submitting your inquiry!</h1>
+									<p>We will be in contact with you soon in regards to hosting your event with Museao.</p>
 				
 						</div>
 					</div>
@@ -65,11 +68,13 @@
 				if(w <= 767){
 					$("#about_button").html("About");
 					$("#vendor_button").html("Vendors");
+					$("#gallery_button").html("<i class='fa fa-picture-o'></i>");
 					$("#contact_button").html("<i class='fa fa-envelope'></i>");
 					
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
+					$("#gallery_button").html('Galley');
 					$("#contact_button").html('Contact');
 				}
 			}

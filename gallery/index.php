@@ -1,7 +1,8 @@
 <?php include("../scripts/dbconnect.php");?> <!-- connect to database-->
 <?php include("../snippets/header.php");?><!-- header-->
+
 <title>Preferred Vendors | Museao | Event Hosting | Columbia, MO</title> <!--title of page -->
-<body id="vendors_page">
+<body id="gallery_page">
 <!--body goes here-->
 			
 			<div id="navbar">
@@ -12,10 +13,10 @@
 					<a href="../about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="../preferred-vendors" id="vendor_button" class="active">
+					<a href="../preferred-vendors" id="vendor_button" >
 						Preferred Vendors
 					</a>
-					<a href="../gallery" id="gallery_button">
+					<a href="../gallery" id="gallery_button" class="active"> 
 						Gallery
 					</a>
 					<a href="../contact" id="contact_button">
@@ -25,25 +26,18 @@
 			</div>
 			<div class="mid_section">
 				<div class="container">
-					<div class="row-fluid">
-						<div class="span8">
-							<h1>Preferred Vendors</h1>
-							<p>The Upper Crust is the premier catering service of Museao, fulfilling all food and beverage needs for events hosted at the venue.<p>
-							<p>It is our passion to ensure every guest has a wonderful experience and we set out to make that happen by offering full service catering on-site. <a href="http://www.theuppercrust.biz/" target="_blank">Click here</a> to view menu pricing and bar packages offered. To best meet the specific needs of your special event, all menus are fully customizable. Have a catering question or want to inquire about items not listed on the menu? Please reach out to us at 573.777.4443
-</p>	
-							<div class="main_button">
-							<a href="../contact" class="main_contact_button">Contact us about hosting your event</a>
-							</div>
-						</div>
-						<div class="span4">
-							<div class="image_wrapper">
-								<div class="upper_image">
-									<a href="http://www.theuppercrust.biz/" target="_blank"><img src="../assets/img/Upper_Crust_Logo_new.png"></a>
-								</div>
-								
-							</div>
-						</div>
-						</div>
+					<div id="gallery">
+						<?php
+						$dirname = "../assets/img/gallery/";
+						$images = scandir($dirname);
+						shuffle($images);
+						$ignore = Array(".", "..");
+						foreach($images as $curimg){
+						if(!in_array($curimg, $ignore)) {
+						echo "<li><a href='".$dirname.$curimg."'><img src='".$dirname.$curimg."' alt='' /></a></li>";
+						}
+						} 				
+						?>
 					</div>
 				</div>
 			</div>
@@ -66,14 +60,23 @@
 
 <?php include("../snippets/javascripts.php");?> <!--global javascripts -->
 <!--any other custom scripts here-->
+<script src="jquery.collagePlus.min.js" type="text/javascript"></script>
 <script type="text/javascript">
   	$(document).ready(function(){
 				responsive();
 			});
+		
 			
 			$(window).resize(function(){
 				responsive();
-			})
+			});
+			 $(window).load(function () {
+				 $('#gallery').collagePlus(
+				 	        {'allowPartialLastRow' : true}
+
+				 );
+			});
+
 			
 			function responsive(){
 				var w = $(window).width();

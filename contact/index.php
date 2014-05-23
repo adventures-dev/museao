@@ -15,6 +15,9 @@
 					<a href="../preferred-vendors" id="vendor_button">
 						Preferred Vendors
 					</a>
+					<a href="../gallery" id="gallery_button">
+						Gallery
+					</a>
 					<a href="../contact" id="contact_button" class="active">
 						Contact
 					</a>
@@ -26,13 +29,12 @@
 						<div class="span6 offset3">
 						
 								<form id="contact_form" action="" method="POST">
-									<h1>Contact us</h1>
-									<p>Let us know your event details for free quote & venue tour.</p>
+									<h3>Let us know your event details for free quote & venue tour!</h3>
 				
 									<label>Name:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>
-										<input class="input-block-level" id="contact_name" type="text" name="name" placeholder="John Smith">
+										<input class="input-block-level" id="contact_name" type="text" name="name" placeholder="Katie Smith">
 									</div>								
 									<label>Email Address:</label>
 									<div class="right-inner-addon">
@@ -47,12 +49,12 @@
 									<label>Event Type:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
-										<input class="input-block-level" id="contact_event_type" type="text" name="event_type" placeholder="Type of event">	
+										<input class="input-block-level" id="contact_event_type" type="text" name="event_type">	
 									</div>
 									<label>Guest Count:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
-										<input class="input-block-level" id="contact_guest_count" type="text" name="guest_count" placeholder="Number of guests">	
+										<input class="input-block-level" id="contact_guest_count" type="text" name="guest_count">	
 									</div>
 									
 									<label>Event Date:</label>
@@ -63,7 +65,7 @@
 									<label>Times:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
-										<input class="input-block-level" id="contact_time" type="text" name="time" placeholder="Time of event">	
+										<input class="input-block-level" id="contact_time" type="text" name="time">	
 									</div>
 									<label>Catered? (+details):</label>
 									<div class="right-inner-addon">
@@ -75,10 +77,10 @@
 									<label>Notes:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
-										<textarea id="contact_notes" name="notes" class="input-block-level" placeholder="Tell us about your event (e.g., date, times, guest count)."></textarea>	
+										<textarea id="contact_notes" name="notes" class="input-block-level" placeholder="Tell us about your event (e.g, room style set-up, special needs, etc.)."></textarea>	
 									</div>
 						
-									<button>Contact</button>
+									<button>Send</button>
 									<div class="error" id="contact_error"></div>								
 								</form>
 						</div>
@@ -118,11 +120,13 @@
 				if(w <= 767){
 					$("#about_button").html("About");
 					$("#vendor_button").html("Vendors");
+					$("#gallery_button").html("<i class='fa fa-picture-o'></i>");
 					$("#contact_button").html("<i class='fa fa-envelope'></i>");
 					
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
+					$("#gallery_button").html('Galley');
 					$("#contact_button").html('Contact');
 				}
 			}
