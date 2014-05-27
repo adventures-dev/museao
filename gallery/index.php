@@ -1,7 +1,7 @@
 <?php include("../scripts/dbconnect.php");?> <!-- connect to database-->
 <?php include("../snippets/header.php");?><!-- header-->
 
-<title>Preferred Vendors | Museao | Event Hosting | Columbia, MO</title> <!--title of page -->
+<title>Gallery | Museao | Event Hosting | Columbia, MO</title> <!--title of page -->
 <body id="gallery_page">
 <!--body goes here-->
 			
@@ -13,12 +13,13 @@
 					<a href="../about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="../preferred-vendors" id="vendor_button" >
-						Preferred Vendors
-					</a>
 					<a href="../gallery" id="gallery_button" class="active"> 
 						Gallery
 					</a>
+					<a href="../preferred-vendors" id="vendor_button" >
+						Preferred Vendors
+					</a>
+					
 					<a href="../contact" id="contact_button">
 						Contact
 					</a>
@@ -89,7 +90,7 @@
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
-					$("#gallery_button").html('Galley');
+					$("#gallery_button").html('Gallery');
 					$("#contact_button").html('Contact');
 				}
 			}

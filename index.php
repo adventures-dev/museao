@@ -47,12 +47,13 @@
 					<a href="about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="preferred-vendors" id="vendor_button">
-						Preferred Vendors
-					</a>
 					<a href="gallery" id="gallery_button">
 						Gallery
 					</a>
+					<a href="preferred-vendors" id="vendor_button">
+						Preferred Vendors
+					</a>
+					
 					<a href="contact" id="contact_button">
 						Contact
 					</a>
@@ -108,7 +109,7 @@
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
-					$("#gallery_button").html('Galley');
+					$("#gallery_button").html('Gallery');
 					$("#contact_button").html('Contact');
 				}
 			}

@@ -488,6 +488,7 @@ form button:action, form button:focus{
 #contact_form h3{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;	
+	text-align: center;
 }
 #contact_form button{
 	text-align: center;

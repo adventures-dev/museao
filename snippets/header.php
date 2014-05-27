@@ -15,6 +15,7 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="../assets/css/font-awesome.min.css"  rel="stylesheet">
+    <link href="../assets/css/datepicker.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
 			
 		<script type="text/javascript">

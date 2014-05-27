@@ -12,12 +12,13 @@
 					<a href="../about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="../preferred-vendors" id="vendor_button" class="active">
-						Preferred Vendors
-					</a>
 					<a href="../gallery" id="gallery_button">
 						Gallery
 					</a>
+					<a href="../preferred-vendors" id="vendor_button" class="active">
+						Preferred Vendors
+					</a>
+					
 					<a href="../contact" id="contact_button">
 						Contact
 					</a>
@@ -28,8 +29,7 @@
 					<div class="row-fluid">
 						<div class="span8">
 							<h1>Preferred Vendors</h1>
-							<p>The Upper Crust is the premier catering service of Museao, fulfilling all food and beverage needs for events hosted at the venue.<p>
-							<p>It is our passion to ensure every guest has a wonderful experience and we set out to make that happen by offering full service catering on-site. <a href="http://www.theuppercrust.biz/" target="_blank">Click here</a> to view menu pricing and bar packages offered. To best meet the specific needs of your special event, all menus are fully customizable. Have a catering question or want to inquire about items not listed on the menu? Please reach out to us at 573.777.4443
+							<p>The Upper Crust is the premier catering service of Museao, fulfilling all food and beverage needs for events hosted at the venue.<br>It is our passion to ensure every guest has a wonderful experience and we set out to make that happen by offering full service catering on-site. <a href="../Catering-Menu.pdf" target="_blank">Click here</a> to view menu pricing and bar packages offered. In order to best meet the specific needs of your special event, all menus are fully customizable. Have a catering question or want to inquire about items not listed on the menu? Please reach out to us at 573.777.4443!
 </p>	
 							<div class="main_button">
 							<a href="../contact" class="main_contact_button">Contact us about hosting your event</a>
@@ -38,7 +38,7 @@
 						<div class="span4">
 							<div class="image_wrapper">
 								<div class="upper_image">
-									<a href="http://www.theuppercrust.biz/" target="_blank"><img src="../assets/img/Upper_Crust_Logo_new.png"></a>
+									<a href="../Catering-Menu.pdf" target="_blank"><img src="../assets/img/Upper_Crust_Logo_new.png"></a>
 								</div>
 								
 							</div>
@@ -86,7 +86,7 @@
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
-					$("#gallery_button").html('Galley');
+					$("#gallery_button").html('Gallery');
 					$("#contact_button").html('Contact');
 				}
 			}

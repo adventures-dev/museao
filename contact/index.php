@@ -12,12 +12,13 @@
 					<a href="../about-venue" id="about_button">
 						About Venue
 					</a>
-					<a href="../preferred-vendors" id="vendor_button">
-						Preferred Vendors
-					</a>
 					<a href="../gallery" id="gallery_button">
 						Gallery
 					</a>
+					<a href="../preferred-vendors" id="vendor_button">
+						Preferred Vendors
+					</a>
+					
 					<a href="../contact" id="contact_button" class="active">
 						Contact
 					</a>
@@ -60,7 +61,7 @@
 									<label>Event Date:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
-										<input class="input-block-level" id="contact_date" type="date" name="date">	
+										<input class="input-block-level" id="contact_date" type="text" name="date">	
 									</div>
 									<label>Times:</label>
 									<div class="right-inner-addon">
@@ -77,7 +78,7 @@
 									<label>Notes:</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
-										<textarea id="contact_notes" name="notes" class="input-block-level" placeholder="Tell us about your event (e.g, room style set-up, special needs, etc.)."></textarea>	
+										<textarea id="contact_notes" name="notes" class="input-block-level" placeholder="Tell us about your event (e.g., room style set-up, special needs, etc.)."></textarea>	
 									</div>
 						
 									<button>Send</button>
@@ -106,6 +107,7 @@
 
 <?php include("../snippets/javascripts.php");?> <!--global javascripts -->
 <!--any other custom scripts here-->
+<script type="text/javascript" src="../assets/js/bootstrap-datepicker.js"></script>
 <script type="text/javascript">
   	$(document).ready(function(){
 				responsive();
@@ -126,10 +128,14 @@
 				}else{
 					$("#about_button").html("About Venue");
 					$("#vendor_button").html("Preferred Vendors");
-					$("#gallery_button").html('Galley');
+					$("#gallery_button").html('Gallery');
 					$("#contact_button").html('Contact');
 				}
 			}
+			
+			$('#contact_date').datepicker({
+				todayBtn: "linked"
+			});
 
 $("#contact_form").validate({
 
