@@ -38,9 +38,13 @@
 						<div class="span4">
 							<div class="image_wrapper">
 								<div class="upper_image">
-									<a href="../Catering-Menu.pdf" target="_blank"><img src="../assets/img/Upper_Crust_Logo_new.png"></a>
+									<a href="http://www.theuppercrust.biz/" target="_blank"><img src="../assets/img/Upper_Crust_Logo_new.png"></a>
+								</div>
+								<div class="upper_image">
+									<a href="http://www.showmesound.com/" target="_blank"><img src="../assets/img/showme.png"></a>
 								</div>
 								
+								 
 							</div>
 						</div>
 						</div>

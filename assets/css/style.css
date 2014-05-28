@@ -288,8 +288,9 @@ body#vendors_page{
 	height: 100%;
 }
 body#contact_page{
-	background: url("../img/contact.jpg");
+	background: url("../img/contact2.jpg");
 	background-size: cover;
+	background-position: left center;
 	width: 100%;
 	height: 100%;
 }
@@ -307,7 +308,7 @@ body#gallery_page{
 }
 .upper_image{
 	max-width: 222px;
-	margin: 0px auto;
+	margin: 0px auto 40px;
 }
 .article{
 	padding: 20px;
