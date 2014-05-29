@@ -61,7 +61,7 @@
 			</div>
 			
 			<div id="mid_section">
-				<h1>Where <span>Beauty</span> Meets Functionality</h1>
+				<h1>Your <span>Enchanting Escape</span> from Ordinary</h1>
 				<h2>Modern Event Venue</h2>
 				<a id="call_to_action" href="contact">Contact us</a>
 			</div>

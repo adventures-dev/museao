@@ -30,7 +30,7 @@
 						<div class="span6 offset3">
 						
 								<form id="contact_form" action="" method="POST">
-									<h3>Let us know your event details for free quote & venue tour!</h3>
+									<h3>Let us know your event details for a free quote & venue tour!</h3>
 				
 									<label>Name:</label>
 									<div class="right-inner-addon">
@@ -68,7 +68,7 @@
 										<span class="validation"></span>	
 										<input class="input-block-level" id="contact_time" type="text" name="time">	
 									</div>
-									<label>Catered? (+details):</label>
+									<label>Catered?</label>
 									<div class="right-inner-addon">
 										<span class="validation"></span>	
 										<textarea id="contact_catered" name="catered" class="input-block-level" placeholder=""></textarea>	
