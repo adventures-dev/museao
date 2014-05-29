@@ -28,10 +28,10 @@
 				<div class="container">
 					<div class="row-fluid">
 						<div class="span6 offset3">
-						
+							<div id="thankyou">
 									<h1>Thank you for submitting your inquiry!</h1>
 									<p>We will be in contact with you soon in regards to hosting your event with Museao.</p>
-				
+							</div>
 						</div>
 					</div>
 				</div>
