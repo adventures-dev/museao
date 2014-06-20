@@ -12,6 +12,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Mr+De+Haviland' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
         <!-- Le styles -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
@@ -63,7 +64,7 @@
 			<div id="mid_section">
 				<h1>Your <span>Enchanting Escape</span> from Ordinary</h1>
 				<h2>Modern Event Venue</h2>
-				<a id="call_to_action" href="contact">Contact us</a>
+				<a id="call_to_action" href="contact">Contact Museao</a>
 			</div>
 			
 			<div id="landing_footer">

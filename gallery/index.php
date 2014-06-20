@@ -30,12 +30,14 @@
 					<div id="gallery">
 						<?php
 						$dirname = "../assets/img/gallery/";
+						$dirname_large = "../assets/img/gallery_large/";
+						
 						$images = scandir($dirname);
 						shuffle($images);
 						$ignore = Array(".", "..");
 						foreach($images as $curimg){
 						if(!in_array($curimg, $ignore)) {
-						echo "<li><a href='".$dirname.$curimg."' class='fancybox' rel='group'><img src='".$dirname.$curimg."' alt='' /></a></li>";
+						echo "<li><a href='".$dirname_large.$curimg."' class='fancybox' rel='group'><img src='".$dirname.$curimg."' alt='' /></a></li>";
 						}
 						} 				
 						?>
