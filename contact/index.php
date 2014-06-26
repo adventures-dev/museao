@@ -24,7 +24,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="mid_section">
+			<div class="mid_section" id="scroll_section">
 				<div class="container">
 					<div class="row-fluid">
 						<div class="span6 offset3">

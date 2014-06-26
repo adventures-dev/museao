@@ -30,18 +30,32 @@
 						<div class="span8">
 							<h1>Preferred Vendors</h1>
 							<p>The Upper Crust is the premier catering service of Museao, fulfilling all food and beverage needs for events hosted at the venue.<br>It is our passion to ensure every guest has a wonderful experience and we set out to make that happen by offering full service catering on-site. <a href="../Catering-Menu.pdf" target="_blank">Click here</a> to view menu pricing and bar packages offered. In order to best meet the specific needs of your special event, all menus are fully customizable. Have a catering question or want to inquire about items not listed on the menu? Please reach out to us at 573.777.4443!</p>
-<p>The music you provide at your next gathering is incredibly important, and the individual controlling this music should hold a similar level of importance. Our mission at Show Me Sound is simple – provide quality entertainment, and keep the focus on you. We take customer satisfaction seriously, and strive to make sure that your event is one that will be remembered for years to come. Contact <a href="http://www.showmesound.com/" target="_blank">Show Me Sound</a> today for your free sound consultation.</p>
-
-
-							<div class="main_button">
-							<a href="../contact" class="main_contact_button">Contact us about hosting your event</a>
-							</div>
+							
 						</div>
 						<div class="span4">
 							<div class="image_wrapper">
 								<div class="upper_image">
 									<a href="http://www.theuppercrust.biz/" target="_blank"><img src="../assets/img/Upper_Crust_Logo_new.png"></a>
 								</div>
+							</div>
+						
+						</div>
+						
+					</div>
+					<div class="row-fluid">
+					
+						<div class="span8">	
+							
+							
+<p>The music you provide at your next gathering is incredibly important, and the individual controlling this music should hold a similar level of importance. Our mission at Show Me Sound is simple – provide quality entertainment, and keep the focus on you. We take customer satisfaction seriously, and strive to make sure that your event is one that will be remembered for years to come. Contact <a href="http://www.showmesound.com/" target="_blank">Show Me Sound</a> today for your free sound consultation.</p>
+
+
+							<div class="main_button">
+							<a href="../contact" class="main_contact_button">Contact Museao about hosting your event</a>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="image_wrapper">
 								<div class="upper_image">
 									<a href="http://www.showmesound.com/" target="_blank"><img src="../assets/img/showme.png"></a>
 								</div>
